@@ -112,8 +112,53 @@ while n<(n+2):
             text="Start",
             action=GameState.QUIT,
         )
+        restart_btn = UIElement(
+            center_position=(400, 100),
+            font_size=15,
+            bg_rgb=BLUE,
+            text_rgb=WHITE,
+            text="The year is 2060.",
+        )
+        restart4_btn = UIElement(
+            center_position=(400, 150),
+            font_size=15,
+            bg_rgb=BLUE,
+            text_rgb=WHITE,
+            text="Because of ozone hole depletion, the aliens have finally invaded planet Earth.",
+        )
+        restart1_btn = UIElement(
+            center_position=(400, 200),
+            font_size=15,
+            bg_rgb=BLUE,
+            text_rgb=WHITE,
+            text="They are coming in massive numbers,",
+        )
+        restart5_btn = UIElement(
+            center_position=(400, 250),
+            font_size=15,
+            bg_rgb=BLUE,
+            text_rgb=WHITE,
+            text="as they will no longer burn while entering the atmosphere.",
+        )
+        restart2_btn = UIElement(
+            center_position=(400, 300),
+            font_size=15,
+            bg_rgb=BLUE,
+            text_rgb=WHITE,
+            text="The humans including you, the player, is forced to fight the incoming hordes of invasion.",
+        )
+        restart3_btn = UIElement(
+            center_position=(400, 350),
+            font_size=15,
+            bg_rgb=BLUE,
+            text_rgb=WHITE,
+            text="Can you hold them off? Or is the Earth doomed…",
+        )
 
-        buttons = [start_btn, quit_btn]
+        
+
+
+        buttons = [start_btn, quit_btn, restart_btn, restart1_btn, restart2_btn, restart3_btn, restart4_btn, restart5_btn, ]
 
         while True:
             mouse_up = False
@@ -255,6 +300,8 @@ while n<(n+2):
 
         
         screen.fill((0, 0, 0))
+        
+        
         
         screen.blit(background, (0, 0))
         for event in pygame.event.get():
